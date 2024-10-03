@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0px;
+    min-height: 100vh;
+    font-family: "Roboto";
+    background-color: rgb(236, 236, 236);
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 75px 1fr;
+}
+
+.page-header {
+    display: flex;
+
+    font-size: 36px;
+    font-weight: bold;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #362c28;
+    color: wheat;
+
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+.content-container {
+    display: grid;
+    padding: 20px 30px;
+    grid-template-rows: 50px 1fr;
+}
+
+.content-header {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content-header-text {
+    display: inline-block;
+
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.add-book-button {
+    border: none;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    
+    padding: 10px;
+    border-radius: 10px;
+    
+    font-weight: 400;
+    font-size: 14px;
+    
+    background-color: #362c28;
+
+    display: flex;
+    align-items: center;
+}
+
+.add-book-button svg {
+    height: 20px;
+    fill: wheat;
+}
+
+.book-container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, clamp(200px, 50%, 600px));
+    padding-top: 20px;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    height: 225px;
+    width: 225px;
+}
+
+.book-card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.book-card-author {
+    margin-bottom: 5px;
+}
+
+.book-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+
+}
+
+.book-actions button{
+    width: 100%;
+    padding: 0.75em;
+    border-radius: 15px;
+    border: none;
+
+    font-weight: bold;
+    transition: all 100ms;
+}
+
+.book-actions button:hover {
+    filter: brightness(95%);
+}
+
+.book-card-remove-button {
+    background-color: rgb(249, 157, 157);
+}
