@@ -24,32 +24,43 @@
             </div>
 
             <div class="book-container">
-                <div class="book-card">
-                    <div class="book-info">
-                        <div class="book-card-title">
-                            1984
-                        </div>
-    
-                        <div class="book-card-author">
-                            By: George Orwell
-                        </div>
-    
-                        <div class="book-card-page-count">
-                            324 pages
-                        </div>
+                
+            </div> 
+
+            <dialog class="add-book-dialog">
+                <form method="dialog">
+                    <div class="dialog-header">
+                        Add a book!
                     </div>
 
-                    <div class="book-actions">
-                        <button class="book-card-completed-button">
-                            Still reading...
-                        </button>
-    
-                        <button class="book-card-remove-button">
-                            Remove
-                        </button>
+                    <div class="dialog-input">
+                        <label for="title">Title<sup>*</sup></label>
+                        <input type="text" id="title" name="title" autofocus required>
                     </div>
-                </div>
-            </div> 
+
+                    <div class="dialog-input">
+                        <label for="author-name">Author Name<sup>*</sup></label>
+                        <input type="text" id="author-name" name="author_name" required>
+                    </div>
+
+                    <div class="dialog-input">
+                        <label for="page-count">Number of Pages<sup>*</sup></label>
+                        <input type="number" id="page-count" name="page_count" required>
+                    </div>
+
+                    <div class="dialog-input">
+                        <label for="have-read">Have you read it?</label>
+                        <input type="checkbox" id="have-read" name="have_read"> 
+                    </div>
+
+                    <div class="dialog-buttons">
+                        <button value="cancel" class="cancel-button" type="button">Cancel</button>
+                        <button value="confirm" class="submit-button green-button">Add Book</button>
+                    </div>
+
+                    
+                </form>
+            </dialog>
         </div>
         
     </div>
